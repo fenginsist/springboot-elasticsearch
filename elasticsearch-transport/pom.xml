@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>springboot-elasticsearch</artifactId>
+        <groupId>com.feng.es</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.feng.es</groupId>
+    <artifactId>elasticsearch-transport</artifactId>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <!-- 自己定义 es 版本依赖，保证和本地一致-->
+        <elasticsearch.version>6.4.2</elasticsearch.version>
+    </properties>
+
+    <dependencies>
+        <!-- elasticsearch -->
+        <dependency>
+            <groupId>org.elasticsearch</groupId>
+            <artifactId>elasticsearch</artifactId>
+            <version>6.4.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.elasticsearch.client</groupId>
+            <artifactId>transport</artifactId>
+            <version>6.4.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.elasticsearch.plugin</groupId>
+            <artifactId>transport-netty4-client</artifactId>
+            <version>6.4.2</version>
+        </dependency>
+    </dependencies>
+
+
+</project>
