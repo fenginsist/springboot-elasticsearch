@@ -37,6 +37,13 @@ public class ContentServiceImpl implements ContentService {
     @Qualifier("restHighLevelClient")
     private RestHighLevelClient client;
 
+    /**
+     * @Author fengfanli
+     * @Description //TODO 将关键词在京东中搜索出来的数据 放到 elasticsearch 中
+     * @Date 18:21 2021/1/18
+     * @Param [keywords]
+     * @return java.lang.Boolean
+     **/
     @Override
     public Boolean parseContent(String keywords) throws IOException {
         List<Content> contents = HtmlParseUtil.parseJD(keywords);
@@ -54,12 +61,12 @@ public class ContentServiceImpl implements ContentService {
     }
 
     /**
-     * 获取这些数据 实现搜索功能
-     * @param keyword
-     * @param pageNo
-     * @param pageSize
-     * @return
-     */
+     * @Author fengfanli
+     * @Description //TODO 获取这些数据 实现搜索功能
+     * @Date 18:22 2021/1/18
+     * @Param [keyword, pageNo, pageSize]
+     * @return java.util.List<java.util.Map<java.lang.String,java.lang.Object>>
+     **/
     @Override
     public List<Map<String, Object>> searchPage(String keyword, int pageNo, int pageSize) {
         if (pageNo<=1){

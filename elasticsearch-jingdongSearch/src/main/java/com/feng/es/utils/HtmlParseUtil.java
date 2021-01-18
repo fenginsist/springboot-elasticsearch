@@ -39,9 +39,7 @@ public class HtmlParseUtil {
         Document document = Jsoup.parse(new URL(url), 30000);
         // 所有在js中可以使用的方法，这里都能用！
         Element element = document.getElementById("J_goodsList"); // 这是包裹所有商品列表的 div
-
         System.out.println(element.html());
-
         // 获取所有的 li 元素
         Elements elements = element.getElementsByTag("li");
         // 获取元素中的内容，这里的 el 就是每一个 li 标签了
@@ -51,7 +49,6 @@ public class HtmlParseUtil {
             String img = el.getElementsByTag("img").eq(0).attr("data-lazy-img");
             String price = el.getElementsByClass("p-price").eq(0).text();
             String title = el.getElementsByClass("p-name").eq(0).text();
-
             System.out.println("============================");
             System.out.println(img);
             System.out.println(price);
