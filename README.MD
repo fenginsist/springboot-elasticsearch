@@ -1,27 +1,29 @@
 # 前言
-## 1. 项目版本
+# 一、项目版本
 springboot 2.2.5.RELEASE（从父模块的 pom.xml 中也可以看到）
 
-## 2. 项目介绍
+elasticsearch 6.4.2
 
+kibana 6.4.2
 
+# 二、项目模块介绍
+## 1. elasticsearch-transport 模块
+学习springboot 整合 transport 来操作elasticsearch
 
-# 一、elasticsearch-transport 模块
-## 1. 
+## 2. elasticsearch-rest 模块
+学习springboot 整合 transport 来操作elasticsearch
 
+## 3. elasticsearch-jingdongSearch 模块
+开发一个实际搜索引擎。并高亮显示和分页
 
-
-
-# 二、elasticsearch-rest 模块
-## 1. 
-
-
+主要介绍一下第三个模块
 
 # 三、elasticsearch-jingdongSearch 模块
 ## 1. 项目 demo 测试
 ### 1. 项目版本： 
 springboot 2.2.5.RELEASE  
 elasticsearch 6.4.2  
+kibana 6.4.2
 
 ### 2. 项目介绍：   
 springboot 整合 rest 操作 elasticsearch，编写京东搜索demo。  
@@ -29,8 +31,6 @@ springboot 整合 rest 操作 elasticsearch，编写京东搜索demo。
 2. 在业务层编写 es 的操作代码（存放数据和搜索数据），  
 3. 搭建一个前端页面，一个搜索框  
 4. 关键字高亮显示  
-
-
 
 
 ## 3. 页面展示和操作
